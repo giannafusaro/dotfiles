@@ -1,0 +1,40 @@
+
+alias win7-start='VBoxManage startvm "Windows 7 (64 bit)" --type headless'
+alias win7-stop='VBoxManage controlvm "Windows 7 (64 bit)" poweroff'
+
+alias ubuntu-start='VBoxManage startvm "Ubuntu (64 bit)" --type headless'
+alias ubuntu-stop='VBoxManage controlvm "Ubuntu (64 bit)" poweroff'
+
+################################################
+# Helper Aliases
+##################################################
+alias c="clear"
+alias ip="ifconfig | grep \"inet \" | grep -v 127.0.0.1 | cut -d\  -f2"
+alias flushcache="dscacheutil -flushcache"
+alias hosts="sudo vi /etc/hosts"
+alias quote="ruby ~/bin/dotfiles/quote.rb"
+alias l="ls -alshGt"
+alias swipl="/opt/local/bin/swipl"
+alias mount-ubuntu="sshfs -p 3022 giannafusaro@localhost:/ ~/mounts"
+alias unmount-ubuntu="fusermount -u ~/mounts"
+alias ssh-ubuntu="ssh -p 3022 giannafusaro@localhost"
+##################################################
+# Utility
+##################################################
+alias reload='source ~/bin/dotfiles/bashrc'
+alias ea='vi ~/bin/dotfiles/bash/aliases && reload' # Edit Aliases
+alias ee="vi ~/bin/dotfiles/bash/env && reload"     # Edit Environment
+alias essh="vi ~/bin/dotfiles/ssh/config"           # Edit SSH
+alias h="history"
+alias dotfiles="cd ~/bin/dotfiles"
+
+##################################################
+# Ruby / Rails
+##################################################
+alias be="bundle exec"
+alias dev="cd ~/Dev"
+alias gcodes="cd ~/Dev/gianna.codes"
+##################################################
+# Project Shortcuts
+##################################################
+alias ubuntu-home="cd ~/mounts/home/giannafusaro"

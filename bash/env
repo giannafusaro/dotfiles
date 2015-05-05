@@ -1,0 +1,22 @@
+export EDITOR=vi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# Git Completion
+. ~/bin/dotfiles/bash/git-completion.bash
+
+# Bash Completion
+if [ -f `brew --prefix`/etc/bash_completion ]; then
+  . `brew --prefix`/etc/bash_completion
+  complete -o default -F _git g
+fi
+
+# Initialize Ruby Environment
+eval "$(rbenv init -)"
+
+# End Message
+printf "${RED}reloaded bash${NO_COLOR}\n";
+
+# Quote of the Moment
+quote
