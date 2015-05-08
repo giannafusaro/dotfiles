@@ -16,7 +16,7 @@ fi
 eval "$(rbenv init -)"
 
 # End Message
-printf "${RED}reloaded bash${NO_COLOR}\n";
+printf "\n${RED}reloaded bash${NO_COLOR}\n";
 
 # Quote of the Moment
 quote

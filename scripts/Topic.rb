@@ -5,7 +5,7 @@ class Topic
   def initialize(source, name)
     @source = source + name
     @quotes = []
-    @max_page_number = max_pages()
+    @max_page_number = max_pages
   end
 
   def max_pages
